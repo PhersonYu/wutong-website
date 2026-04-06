@@ -1,65 +1,192 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="bg-white text-gray-900">
+
+      {/* NAVBAR */}
+      <header className="w-full py-4 px-6 flex justify-between items-center border-b bg-white">
+        <div className="font-bold text-lg tracking-wide">
+          WUTONG
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
+
+        <nav className="flex gap-6 text-sm text-gray-700">
+          <a href="#" className="hover:text-black">Home</a>
+          <a href="#" className="hover:text-black">About</a>
+          <a href="#" className="hover:text-black">Services</a>
+          <a href="#" className="hover:text-black">Contact</a>
+        </nav>
+      </header>
+
+      {/* HERO */}
+      <section className="text-center py-24 px-6">
+        <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          Cross-Border Distribution Partner for Home Appliances in Asia
+        </h1>
+
+        <p className="mt-6 text-gray-600 max-w-2xl mx-auto">
+          Leveraging a dual-hub structure in Hong Kong and Singapore, we connect brands, e-commerce platforms and distribution channels across China, Hong Kong and Southeast Asia.
+        </p>
+
+        <div className="flex justify-center gap-4 mt-8">
           <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:phersonyu@gmail.com"
+            className="bg-black text-white px-6 py-3 rounded-lg hover:opacity-80"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            Contact Us
           </a>
+
           <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://wa.me/6580614675"
+            className="border px-6 py-3 rounded-lg hover:bg-gray-100"
           >
-            Documentation
+            WhatsApp
           </a>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* TRUSTED BY */}
+      <section className="py-12 text-center">
+        <p className="text-gray-500 mb-6">
+          Trusted by major cross-border e-commerce platforms
+        </p>
+
+        <div className="flex justify-center gap-12 text-lg font-semibold text-gray-500">
+          <span>Tmall Global</span>
+          <span>Poizon (DEWU)</span>
+          <span>Vipshop International</span>
+        </div>
+
+        <p className="mt-4 text-sm text-gray-400">
+          Serving China, Hong Kong and Southeast Asia markets
+        </p>
+      </section>
+
+      {/* ABOUT */}
+      <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 className="text-3xl font-bold mb-6">
+          About WUTONG
+        </h2>
+
+        <p className="text-gray-600">
+          WUTONG GLOBAL COMMERCE (Singapore) and WUTONG INTERNATIONAL GROUP (Hong Kong) operate as a dual-hub cross-border trading platform focused on home appliances.
+        </p>
+
+        <p className="text-gray-600 mt-4">
+          Our Hong Kong entity manages global sourcing and inventory, while our Singapore entity drives Southeast Asia market expansion, providing stable supply and efficient cross-border fulfillment.
+        </p>
+      </section>
+
+      {/* SERVICES */}
+      <section className="py-20 px-6 bg-gray-50">
+        <h2 className="text-3xl font-bold text-center mb-12">
+          What We Do
+        </h2>
+
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8">
+
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <h3 className="font-bold text-lg">
+              Cross-Border Distribution
+            </h3>
+            <p className="mt-3 text-gray-600">
+              We help brands distribute products across China, Hong Kong and Southeast Asia through established e-commerce platforms.
+            </p>
+          </div>
+
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <h3 className="font-bold text-lg">
+              Platform Supply & Channel Access
+            </h3>
+            <p className="mt-3 text-gray-600">
+              Direct access to major cross-border platforms including Tmall Global, Poizon and Vipshop, enabling fast market entry.
+            </p>
+          </div>
+
+          <div className="p-6 bg-white rounded-xl shadow-sm">
+            <h3 className="font-bold text-lg">
+              Inventory & Trading Capability
+            </h3>
+            <p className="mt-3 text-gray-600">
+              We operate inventory-based trading to ensure stable supply, competitive pricing and reliable fulfillment.
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* CONTACT SECTION（重点强化） */}
+      <section className="py-20 px-6 text-center">
+        <h2 className="text-3xl font-bold mb-6">
+          Get in Touch
+        </h2>
+
+        <p className="text-gray-600 mb-8">
+          We are open to partnerships with brands, distributors and platforms.
+        </p>
+
+        <div className="space-y-2 text-gray-700">
+          <p>Email: phersonyu@gmail.com</p>
+          <p>WhatsApp (Singapore): +65 80614675</p>
+          <p>WhatsApp (Hong Kong): +852 52162440</p>
+        </div>
+
+        <div className="flex justify-center gap-4 mt-8">
+          <a
+            href="mailto:phersonyu@gmail.com"
+            className="bg-black text-white px-6 py-3 rounded-lg hover:opacity-80"
+          >
+            Email Us
+          </a>
+
+          <a
+            href="https://wa.me/6580614675"
+            className="border px-6 py-3 rounded-lg hover:bg-gray-100"
+          >
+            WhatsApp
+          </a>
+        </div>
+      </section>
+
+      {/* FOOTER */}
+      <footer className="bg-black text-white py-12 px-6">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-sm">
+
+          <div>
+            <h3 className="font-semibold mb-2">WUTONG</h3>
+            <p className="text-gray-400">
+              Cross-border distribution partner for home appliances in Asia.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-2">Entities</h3>
+            <p className="text-gray-400">
+              WUTONG GLOBAL COMMERCE PTE. LTD. (Singapore)
+            </p>
+            <p className="text-gray-400">
+              WUTONG INTERNATIONAL GROUP CO., LIMITED (Hong Kong)
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-semibold mb-2">Contact</h3>
+            <p className="text-gray-400">
+              phersonyu@gmail.com
+            </p>
+            <p className="text-gray-400">
+              +65 80614675
+            </p>
+            <p className="text-gray-400">
+              +852 52162440
+            </p>
+          </div>
+
+        </div>
+
+        <p className="text-center text-gray-500 mt-10 text-xs">
+          © 2026 WUTONG. All rights reserved.
+        </p>
+      </footer>
+
+    </main>
   );
 }
