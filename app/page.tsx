@@ -63,11 +63,16 @@ export default function Home() {
           Dual-Hub Structure
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
 
           {/* 香港（左） */}
-          <div>
-            <img src="/about-HK.png" className="rounded-xl w-full" />
+          <div className="group">
+            <div className="overflow-hidden rounded-xl">
+              <img
+                src="/about-HK.png"
+                className="w-full h-[320px] object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
             <h3 className="mt-4 font-semibold text-lg">Hong Kong</h3>
             <p className="text-gray-600 text-sm mt-2">
               Global sourcing, trading and inventory hub.
@@ -75,8 +80,13 @@ export default function Home() {
           </div>
 
           {/* 新加坡（右） */}
-          <div>
-            <img src="/about-SG.png" className="rounded-xl w-full" />
+          <div className="group">
+            <div className="overflow-hidden rounded-xl">
+              <img
+                src="/about-SG.png"
+                className="w-full h-[320px] object-cover transition-transform duration-500 group-hover:scale-105"
+              />
+            </div>
             <h3 className="mt-4 font-semibold text-lg">Singapore</h3>
             <p className="text-gray-600 text-sm mt-2">
               Southeast Asia market expansion and distribution center.
