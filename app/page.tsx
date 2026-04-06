@@ -3,21 +3,21 @@ export default function Home() {
     <main className="bg-white text-gray-900">
 
       {/* NAVBAR */}
-      <header className="w-full py-4 px-6 flex justify-between items-center border-b bg-white">
+      <header className="w-full py-4 px-6 flex justify-between items-center border-b bg-white sticky top-0 z-50">
         <div className="font-bold text-lg tracking-wide">
           WUTONG
         </div>
 
         <nav className="flex gap-6 text-sm text-gray-700">
-          <a href="#" className="hover:text-black">Home</a>
-          <a href="#" className="hover:text-black">About</a>
-          <a href="#" className="hover:text-black">Services</a>
-          <a href="#" className="hover:text-black">Contact</a>
+          <a href="#home" className="hover:text-black">Home</a>
+          <a href="#about" className="hover:text-black">About</a>
+          <a href="#services" className="hover:text-black">Services</a>
+          <a href="#contact" className="hover:text-black">Contact</a>
         </nav>
       </header>
 
       {/* HERO */}
-      <section className="text-center py-24 px-6">
+      <section id="home" className="text-center py-24 px-6">
         <h1 className="text-4xl md:text-6xl font-bold leading-tight">
           Cross-Border Distribution Partner for Home Appliances in Asia
         </h1>
@@ -61,7 +61,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section className="py-20 px-6 max-w-4xl mx-auto text-center">
+      <section id="about" className="py-20 px-6 max-w-4xl mx-auto text-center">
         <h2 className="text-3xl font-bold mb-6">
           About WUTONG
         </h2>
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-20 px-6 bg-gray-50">
+      <section id="services" className="py-20 px-6 bg-gray-50">
         <h2 className="text-3xl font-bold text-center mb-12">
           What We Do
         </h2>
@@ -113,8 +113,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CONTACT SECTION（重点强化） */}
-      <section className="py-20 px-6 text-center">
+      {/* CONTACT */}
+      <section id="contact" className="py-20 px-6 text-center">
         <h2 className="text-3xl font-bold mb-6">
           Get in Touch
         </h2>
