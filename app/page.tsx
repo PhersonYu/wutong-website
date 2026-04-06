@@ -7,7 +7,7 @@ export default function Home() {
         
         {/* LOGO */}
         <div className="flex items-center gap-2">
-          <img src="/logo.png" className="h-8" />
+          <img src="/wtlogo.png" className="h-8" />
           <span className="font-bold tracking-wide">WUTONG</span>
         </div>
 
@@ -65,18 +65,18 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 gap-10 items-center">
 
-          {/* HK */}
+          {/* 香港（左） */}
           <div>
-            <img src="/about-hk.png" className="rounded-xl" />
+            <img src="/about-HK.png" className="rounded-xl w-full" />
             <h3 className="mt-4 font-semibold text-lg">Hong Kong</h3>
             <p className="text-gray-600 text-sm mt-2">
               Global sourcing, trading and inventory hub.
             </p>
           </div>
 
-          {/* SG */}
+          {/* 新加坡（右） */}
           <div>
-            <img src="/about-sg.png" className="rounded-xl" />
+            <img src="/about-SG.png" className="rounded-xl w-full" />
             <h3 className="mt-4 font-semibold text-lg">Singapore</h3>
             <p className="text-gray-600 text-sm mt-2">
               Southeast Asia market expansion and distribution center.
@@ -95,7 +95,7 @@ export default function Home() {
 
         <div className="max-w-6xl mx-auto">
 
-          <img src="/services.png" className="rounded-xl mb-10" />
+          <img src="/services.png" className="rounded-xl mb-10 w-full" />
 
           <h2 className="text-3xl font-bold text-center mb-12">
             What We Do
