@@ -5,7 +5,6 @@ export default function Home() {
       {/* NAVBAR */}
       <header className="w-full py-4 px-6 flex justify-between items-center border-b bg-white">
         
-        {/* LOGO */}
         <div className="flex items-center gap-2">
           <img src="/wtlogo.png" className="h-8" />
           <span className="font-bold tracking-wide">WUTONG</span>
@@ -24,19 +23,16 @@ export default function Home() {
         id="home"
         className="relative h-[80vh] flex items-center justify-center text-center text-white"
       >
-        <img
-          src="/hero.png"
-          className="absolute w-full h-full object-cover"
-        />
+        <img src="/hero.png" className="absolute w-full h-full object-cover" />
         <div className="absolute inset-0 bg-black/40" />
 
         <div className="relative px-6">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-            Cross-Border Distribution Partner for Home Appliances in Asia
+            Cross-Border Trading Platform between China and Southeast Asia
           </h1>
 
           <p className="mt-6 max-w-2xl mx-auto text-gray-200">
-            Leveraging a dual-hub structure in Hong Kong and Singapore, we connect brands, e-commerce platforms and distribution channels across Asia.
+            We connect brands, suppliers and distribution channels across China, Hong Kong and Southeast Asia through a dual-hub structure.
           </p>
 
           <div className="flex justify-center gap-4 mt-8">
@@ -65,7 +61,7 @@ export default function Home() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
 
-          {/* 香港（左） */}
+          {/* 香港 */}
           <div className="group">
             <div className="overflow-hidden rounded-xl">
               <img
@@ -79,7 +75,7 @@ export default function Home() {
             </p>
           </div>
 
-          {/* 新加坡（右） */}
+          {/* 新加坡 */}
           <div className="group">
             <div className="overflow-hidden rounded-xl">
               <img
@@ -96,13 +92,12 @@ export default function Home() {
         </div>
 
         <p className="text-gray-600 text-center mt-10 max-w-3xl mx-auto">
-          WUTONG GLOBAL COMMERCE (Singapore) and WUTONG INTERNATIONAL GROUP (Hong Kong) operate as a dual-hub cross-border trading platform focused on home appliances.
+          WUTONG GLOBAL COMMERCE (Singapore) and WUTONG INTERNATIONAL GROUP (Hong Kong) operate as a dual-hub cross-border trading platform supporting both export and import flows across multiple product categories.
         </p>
       </section>
 
       {/* SERVICES */}
       <section id="services" className="py-20 px-6 bg-gray-50">
-
         <div className="max-w-6xl mx-auto">
 
           <img src="/services.png" className="rounded-xl mb-10 w-full" />
@@ -115,28 +110,28 @@ export default function Home() {
 
             <div className="p-6 bg-white rounded-xl shadow-sm">
               <h3 className="font-bold text-lg">
-                Cross-Border Distribution
+                Cross-Border Trade
               </h3>
               <p className="mt-3 text-gray-600">
-                Distribution across China, Hong Kong and Southeast Asia.
+                Supporting both export from China to Southeast Asia and import into China across multiple categories.
               </p>
             </div>
 
             <div className="p-6 bg-white rounded-xl shadow-sm">
               <h3 className="font-bold text-lg">
-                Platform Access
+                Channel & Platform Access
               </h3>
               <p className="mt-3 text-gray-600">
-                Access to Tmall Global, Poizon and Vipshop.
+                Direct access to major e-commerce platforms and distribution networks across China and Southeast Asia.
               </p>
             </div>
 
             <div className="p-6 bg-white rounded-xl shadow-sm">
               <h3 className="font-bold text-lg">
-                Inventory & Trading
+                Supply Chain & Fulfillment
               </h3>
               <p className="mt-3 text-gray-600">
-                Inventory-backed trading with reliable fulfillment.
+                End-to-end logistics, inventory management and cross-border fulfillment capabilities.
               </p>
             </div>
 
